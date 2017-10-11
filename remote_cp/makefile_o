@@ -1,0 +1,4 @@
+
+clang++  remote_cp_server.cpp  Util.cpp  Server.cpp -o ./server_obfuscated/remote_cp_server_o  -std=c++11 -lcrypto -w -mllvm -fla
+
+clang++  remote_cp_client.cpp  Util.cpp  Client.cpp -o ./client_obfuscated/remote_cp_client_o  -std=c++11 -lcrypto -w -mllvm -fla
