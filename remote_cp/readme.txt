@@ -1,22 +1,22 @@
-±àÒëÇëÖ´ĞĞ./makefileÃüÁî£¬µÃµ½µÄ³ÌĞò·Ö±ğÔÚclientºÍserverÎÄ¼ş¼ĞÏÂ
+ç¼–è¯‘è¯·æ‰§è¡Œ./makefileå‘½ä»¤ï¼Œå¾—åˆ°çš„ç¨‹åºåˆ†åˆ«åœ¨clientå’Œserveræ–‡ä»¶å¤¹ä¸‹
 
-±¾³ÌĞòÊÇÒ»¸öÔ¶³ÌÎÄ¼ş¸´ÖÆ³ÌĞò
+æœ¬ç¨‹åºæ˜¯ä¸€ä¸ªè¿œç¨‹æ–‡ä»¶å¤åˆ¶ç¨‹åº
 
-·şÎñ¶ËÊ¹ÓÃ
-./remote_cp_server¼àÌı¶Ë¿Ú
+æœåŠ¡ç«¯ä½¿ç”¨
+./remote_cp_serverç›‘å¬ç«¯å£
 
-·şÎñ¶ËÔö¼ÓÕËºÅÃÜÂë
+æœåŠ¡ç«¯å¢åŠ è´¦å·å¯†ç 
 ./remote_cp_server -u username -p password
 
-¿Í»§¶ËÊ¹ÓÃ
-./remote_cp_client -u username -p password xxxx:/path1/to1/file1 /path2/to2/file2 
-xxxÎªÔ¶³Ìip,½«Ô¶³Ì·şÎñÆ÷ÉÏµÄfile1¸´ÖÆµ½±¾µØ/path2/to2/file2ÉÏ
+å®¢æˆ·ç«¯ä½¿ç”¨
+./remote_cp_client -u username -p password -f xxxx:/path1/to1/file1 -t /path2/to2/file2 
+xxxä¸ºè¿œç¨‹ip,å°†è¿œç¨‹æœåŠ¡å™¨ä¸Šçš„file1å¤åˆ¶åˆ°æœ¬åœ°/path2/to2/file2ä¸Š
 
-¿Í»§¶ËÊ¹ÓÃ
-./remote_cp_client -u username -p password /path1/to1/file1 xxxxxx:/path2/to2/file2 
-xxxÎªÔ¶³Ìip,½«±¾µØµÄfile1¸´ÖÆµ½Ô¶³Ì·şÎñÆ÷µÄ/path2/to2/file2
+å®¢æˆ·ç«¯ä½¿ç”¨
+./remote_cp_client -u username -p password -f /path1/to1/file1 -t xxxxxx:/path2/to2/file2 
+xxxä¸ºè¿œç¨‹ip,å°†æœ¬åœ°çš„file1å¤åˆ¶åˆ°è¿œç¨‹æœåŠ¡å™¨çš„/path2/to2/file2
 
-°²È«¼¼Êõ£º
-1.±¾³ÌĞòÔÚÁ¬½Ó½¨Á¢Ê±ÏÈÊ¹ÓÃopenssl diff hellmanĞ­Òé½øĞĞÃÜÔ¿Ğ­ÉÌ£¬ºóÃæËùÓĞµÄÁ÷Á¿¶¼Ê¹ÓÃ¸ÃÃÜÔ¿½øĞĞaes¼ÓÃÜ
-2.³ÌĞò½»»»ÃÜÔ¿ºó»áÑéÖ¤usernameºÍpassword£¬·şÎñ¶ËµÄpassword¾­¹ısha256¹şÏ£ºóºÍusername´æÔÚconfigÎÄ¼şÖĞ
-3.±àÒë»·¾³°²×°ollvmºóÊ¹ÓÃmakefile_o½øĞĞ±àÒë»á¶ÔÉú³ÉµÄ¶ş½øÖÆÎÄ¼ş½øĞĞ»ìÏı
+å®‰å…¨æŠ€æœ¯ï¼š
+1.æœ¬ç¨‹åºåœ¨è¿æ¥å»ºç«‹æ—¶å…ˆä½¿ç”¨openssl diff hellmanåè®®è¿›è¡Œå¯†é’¥åå•†ï¼Œåé¢æ‰€æœ‰çš„æµé‡éƒ½ä½¿ç”¨è¯¥å¯†é’¥è¿›è¡ŒaesåŠ å¯†
+2.ç¨‹åºäº¤æ¢å¯†é’¥åä¼šéªŒè¯usernameå’Œpasswordï¼ŒæœåŠ¡ç«¯çš„passwordç»è¿‡sha256å“ˆå¸Œåå’Œusernameå­˜åœ¨configæ–‡ä»¶ä¸­
+3.ç¼–è¯‘ç¯å¢ƒå®‰è£…ollvmåä½¿ç”¨makefile_oè¿›è¡Œç¼–è¯‘ä¼šå¯¹ç”Ÿæˆçš„äºŒè¿›åˆ¶æ–‡ä»¶è¿›è¡Œæ··æ·†
